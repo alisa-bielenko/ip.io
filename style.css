@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 20px 50px 20px auto;
+}
+
+#ip-finder {
+    justify-self: center;
+    grid-row: 2/3;
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+
+#ip-finder:hover {
+    cursor: pointer;
+}
+
+
+#ip-finder:active {
+    transform: scale(0.85);
+
+}
+
+.info {
+    grid-row: 4/5;
+    width: 400px;
+    min-height: 200px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 50px 50px;
+    padding: 10px;
+    padding-top: 30px;
+}
